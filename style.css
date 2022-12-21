@@ -1,0 +1,228 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorTextos:#e0e0e0;
+    --colorBotones: #00bcb5;
+    --colorFondo: #ff7e4b;
+    --paddingSecciones:60px 0 ;
+    --marginElementos: 40px 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width:1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSecciones) ;
+
+}
+/*navegacion*/
+
+.menu_navegacion{
+    padding: 20;
+    display: flex;
+    justify-content: space-between ;
+    align-items:center ;
+    height: 70px;
+}
+
+.logo{
+    height: 70px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    color: var(--colorFondo);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.enlaces a:hover{
+    text-decoration: underline;
+}
+
+/*hero*/
+
+.hero {
+    height: 500px;
+    background-image: url(images/imagen-felxbox-min.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor_textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 700px;
+}
+
+.hero p{
+    font-weight: 300;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.boton_mas{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: var(--colorBotones);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/*main*/
+
+.titulo_seccion {
+    text-align: center;
+    font-size: 35px;
+    color: var(--colorFondo);
+}
+
+.subtitulo_seccion {
+    text-align: center;
+    color: var(--colorTextos);
+    margin: 20px 0;
+}
+
+.Servicios {
+    padding-top: var(--paddingSecciones);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Servicio {
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#facebook {
+    background-image: url(images/Facebook.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#instagram {
+    background-image: url(images/Instagram.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#twitter {
+    background-image: url(images/Twitter.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.images {
+    background-color: #ffffff;
+}
+
+.contenedor_imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor_imagenes img{
+    display: block;
+    object-fit: cover;
+    width: 30%;
+    height: 220px;
+    box-shadow: 0 0 4px #000000;
+    margin-bottom: var(--marginElementos);
+}
+
+/*footer*/
+footer {
+    background-image: url(images/imagen-felxbox-min.png);
+    background-position: center;
+    background-size: cover;
+}
+
+footer .subtitulo_seccion{
+    color: #ffffff;
+}
+
+.redes_sociales {
+    padding-top: var(--paddingSecciones);
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.redes_sociales i{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu_navegacion {
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+    }
+
+    .hero h1{
+        font-size: 35px;
+    }
+    .hero p{
+        font-size: 25px;
+    }
+    .servicio{
+        margin-bottom: var(--marginElementos);
+    }
+
+    .contenedor_imagenes img{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .redes_sociales{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes_sociales i{
+        margin-bottom: 20px;
+    }
+}
+
